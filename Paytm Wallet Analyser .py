@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 #import panda for dataframe manipulation 
 import pandas as pd
 #import matplotlib for visualization
@@ -100,16 +94,3 @@ plt.plot(xc,yc)
 #check top right corner on graph and will indicate color of the line
 plt.legend(['Debit','Credit','Cashback','mean'],loc=1)
 plt.savefig('/home/FRACTAL/hardik.kumar/Desktop/paytmfig.pdf', format='pdf')
-
-
-# In[4]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
