@@ -21,4 +21,8 @@ Paytm wallet Analysis using Python Libraries</h1>
 
 ![alt text](https://github.com/kumar-hardik/Paytm-Wallet-Analyser/blob/master/Images/full%20summary.png)
 
-![alt text]()
+![alt text](https://github.com/kumar-hardik/Paytm-Wallet-Analyser/blob/master/Images/graph.png)
+
+<h4>You can run this script in pycharm , sublime text , notepad++ etc</h4>
+<hr>
+<p>You must have python , pandas and matplotlib or Anaconda in your system to run this script.</p>
