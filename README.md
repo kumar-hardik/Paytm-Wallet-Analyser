@@ -14,3 +14,11 @@ Paytm wallet Analysis using Python Libraries</h1>
 </ul>
  Here is my paytm summary. Now check yours. Sad , I got very low cashback :(
  
+ 
+![alt text](https://github.com/kumar-hardik/Paytm-Wallet-Analyser/blob/master/Images/paytm%20summary.png)
+
+![alt text](https://github.com/kumar-hardik/Paytm-Wallet-Analyser/blob/master/Images/cashback%20summary.png)
+
+![alt text](https://github.com/kumar-hardik/Paytm-Wallet-Analyser/blob/master/Images/full%20summary.png)
+
+![alt text]()
