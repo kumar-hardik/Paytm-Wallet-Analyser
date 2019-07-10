@@ -1,15 +1,16 @@
 <h1>
-Analyze Your's paytm wallet using Python Pandas Library
-With the help of this script you can analyze your's paytm wallet summary.
-
-This script will provide the following information
-
-Your's Paytm debit month wise
-Your's Paytm Credit month wise
-Total cashback given to you in a month
-Total debit in a year through Paytm
-Total Credit in a year through Paytm
-Total Cashback in a year through Paytm
-Percentage of cashback received on debit
-A graph for visualization of your debit , credit and cashback.
-Here is my paytm summary. Now check yours. Sad , I got very low cashback.
+Paytm wallet Analysis using Python Libraries</h1>
+<p>With the help of this script you can analyze your's paytm wallet summary.</p>
+<p>This script will provide the following insights</p>
+<ul type="1">
+<li>Your Paytm's debit month wise</l1>
+<li>Your Paytm's Credit month wise</l1>
+<li>Total cashback given to you in a month</l1>
+<li>Total debit in the year via Paytm</l1>
+<li>Total Credit in the year via Paytm</l1>
+<li>Total Cashback in the year via Paytm</l1>
+<li>Percentage of cashback received on debit</l1>
+<li>A graph for visualization of your debit , credit and cashback.</l1>
+</ul>
+ Here is my paytm summary. Now check yours. Sad , I got very low cashback :(
+ 
