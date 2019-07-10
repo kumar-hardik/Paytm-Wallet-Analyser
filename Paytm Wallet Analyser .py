@@ -4,21 +4,25 @@
 # In[3]:
 
 
-#import panda for operation on the csv file using dataframe
+#import panda for dataframe manipulation 
 import pandas as pd
-#import matplotlib to plot the chart for visualization
+#import matplotlib for visualization
 import matplotlib.pyplot as plt
 
 
 #read the CSV file
-df=pd.read_excel("/home/FRACTAL/hardik.kumar/Desktop/mypaytm.xlsx")
+df=pd.read_csv("/home/FRACTAL/hardik.kumar/Desktop/mypaytm.csv")
+"""
+IMPORTANT some users may get an error with csv file. Then convert the CSV file into an excel file and run the following command:
 
+df= pd.read_excel("/home/FRACTAL/hardik.kumar/Desktop/mypaytm.xlsx")
+"""
 
 #fill all the nan value to zero
 df.fillna({'Debit':0,'Credit':0},inplace=True)
 
 #fetach all the cashback.
-#Note:chack in your csv file. In some CSV it is Bonus Added in place of Cashback Received
+#Note:check in your csv file, in some CSV it is Bonus Added instead of Cashback Received
 df_check_cashback=df[['Date','Credit']][df['Activity']=='Cashback Received']
 
 #convert date coloumn to date time value. It will help in sorting , sum and group by operation
@@ -27,7 +31,7 @@ df_check_cashback['Date']=pd.to_datetime(df_check_cashback['Date'])
 #add all the cashback according to month
 df_cashback=df_check_cashback.groupby(df_check_cashback['Date'].dt.strftime('%B'))['Credit'].sum()
 
-#save the cashback file. Change path according to your computer.
+#save the cashback file in ypur desired local destination.
 df_cashback.to_csv("/home/FRACTAL/hardik.kumar/Desktop/paytmcashback.csv")
 
 
@@ -37,7 +41,7 @@ df['Date']=pd.to_datetime(df['Date'])
 #group the debit and credit of month 
 summary_by_month=df.groupby(df['Date'].dt.strftime('%B'))['Debit','Credit'].sum()
 
-#save the file.check path accoring to your system
+#save the file.check path accoring to your desired local destination.
 summary_by_month.to_csv("/home/FRACTAL/hardik.kumar/Desktop/paytm_summary.csv")
 
 #read the summary file
@@ -85,13 +89,8 @@ yc=df_cashback['Cashback']
 
 
 plt.title('Paytm')
-
-
-#label x axis as month
-plt.xlabel("Date")
-
-#label y axis as debit/credit
-plt.ylabel("Debit/Credit")
+plt.xlabel("Date") # X-Axis 
+plt.ylabel("Debit/Credit") # Y-Axis
 
 #plot the chart of the credit/debit against month
 plt.plot(x,y1)
